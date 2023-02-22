@@ -5,8 +5,8 @@ const AllCategories = () => {
 <div>
     <h1>What kind of food do you like?</h1>
 
-    {['ITALIAN', 'SEAFOOD', 'APPETIZERS', 'SALADS', 'ALL'].
-    map((category, id) => <Filter category={category} key={category.id} />)
+    {['ITALIAN', 'SEAFOOD', 'APPETIZERS', 'SALADS', 'ALL']
+    .map((category, index) => <Filter category={category} key={index} />)
     }
     
 </div>
